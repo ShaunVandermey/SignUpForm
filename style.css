@@ -1,0 +1,47 @@
+body{
+    display: flex;
+}
+
+#sidebarImage{
+    width: 500px;
+}
+
+#formArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    margin: 0 3%;
+}
+
+label, input{
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus{
+    background-color: lightblue;
+}
+
+#imageArea{
+    position: relative;
+}
+
+img{
+    position: relative;
+}
+
+#odinLogo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#odinLogo img{
+    height: 200px;
+}
+
+#odinLogo div{
+    color: white;
+}
