@@ -8,47 +8,58 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
+    <div class="sidebar"></div>
     <div id="imageArea">
         <img id="sidebarImage" src="src/egor-yakushkin-storm.jpg" alt="A moody image of a storm.">
         <div id="odinLogo">
-            <img src="src/odin-lined.png" alt="The Odin Project logo.">
-            <div>ODIN</div>
+            <div id="odinLogoBar">
+                <img src="src/odin-lined.png" alt="The Odin Project logo.">
+                <div>ODIN</div>
+            </div>
+            
         </div>
+        <div id="photoCredit">Photo Credit: <a href="https://unsplash.com/photos/AtQoiUN_w1s">Egor Yakushkin</a></div>
         
-        <div>Photo Credit: <a href="https://unsplash.com/photos/AtQoiUN_w1s">Egor Yakushkin</a></div>
     </div>
     <div id="formArea">
         <div id="textArea">
             <div class="leadText">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
             <div class="leadText">You know you want to.</div>
         </div>
-        <form action="" method="POST">
-            <div>Let's do this!</div>
-            <div>
-                <label for="first_name">First Name:</label>
-                <input type="text" name="first_name" id="first_name">
-            </div>
-            <div>
-                <label for="last_name">Last Name:</label>
-                <input type="text" name="last_name" id="last_name">
-            </div>
-            <div>
-                <label for="user_email">Email Address:</label>
-                <input type="email" id="user_email" name="email" placeholder="name@place.com">
-            </div>
-            <div>
-                <label for="user_password">Password:</label>
-                <input type="password" id="user_password" name="password">
-            </div>
-            <div>
-                <label for="user_password_match">Confirm Password:</label>
-                <input type="password" id="user_password_match" name="password_match">
-            </div>
-        </form>
+        <div id="formDiv">
+            <div class="leadText">Let's do this!</div>
+            <form action="" method="POST">
+                <div>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                <div>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div>
+                    <label for="user_email">Email Address:</label>
+                    <input type="email" id="user_email" name="email" placeholder="name@place.com">
+                </div>
+                <div>
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="text" name="phone_number" id="phone_number">
+                </div>
+                <div>
+                    <label for="user_password">Password:</label>
+                    <input type="password" id="user_password" name="password">
+                </div>
+                <div>
+                    <label for="user_password_match">Confirm Password:</label>
+                    <input type="password" id="user_password_match" name="password_match">
+                </div>
+            </form>
+        </div>
         <div id="buttonArea">
             <button>Create Account</button>
             <div>Already have an account? <a href="">Log In</a></div>
         </div>
     </div>
+    <div class="sidebar"></div>
 </body>
 </html>

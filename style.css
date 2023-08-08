@@ -1,9 +1,28 @@
+@font-face{
+    font-family: Norse;
+    src: url(src/css/fonts/Norse/Norse-Bold.woff)
+}
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body{
     display: flex;
+    justify-content: space-between;
+    background-color: #F9FAFB;
+    margin: 0;
+}
+
+.sidebar{
+    width: 16%;
+    background-color: #0E0E0E;
+    height: 100vh;
 }
 
 #sidebarImage{
     width: 500px;
+    height: 100vh;
 }
 
 #formArea{
@@ -11,6 +30,10 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 10%;
+    /*margin: 0 3%;*/
+}
+
+#formArea > * > *{
     margin: 0 3%;
 }
 
@@ -35,7 +58,20 @@ img{
     position: absolute;
     top: 0px;
     left: 0px;
+    right: 0px;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+#odinLogoBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #odinLogo img{
@@ -43,5 +79,41 @@ img{
 }
 
 #odinLogo div{
+    font-family: Norse;
+    font-size: 2.5em;
+}
+
+#odinLogo div{
     color: white;
+}
+
+#photoCredit{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    width: 210px;
+    margin: auto;
+    color: #F9FAFB;
+}
+
+#photoCredit a{
+    color: inherit;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 60% 60%;
+    grid-template-rows: 40% 40% 40%;
+}
+
+#formDiv{
+    background-color: #FFFFFF;
+    box-shadow: 10px 0px 10px #0E0E0E;
+    width: 100%;
+}
+
+.leadText{
+    font-weight: 600;
+    font-size: larger;
 }
