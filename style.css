@@ -49,7 +49,9 @@ body > *{
 
 input{
     border-color: #E5E7EB;
-    border-radius: 5px;
+    border-radius: 3px;
+    min-height: 22px;
+    border: 1px solid #0E0E0E;
 }
 
 label, input{
@@ -65,8 +67,10 @@ label{
     font-family:'Times New Roman', Times, serif;
 }
 
-input:focus{
-    background-color: lightblue;
+input:focus, input:active{
+    outline-color: #5177E1;
+    box-shadow: 1px 1px 5px #0E0E0E;
+    border: 1px thin #5177E1;
 }
 
 #imageArea{
@@ -126,7 +130,7 @@ img{
 
 form{
     display: grid;
-    grid-template-columns: 60% 60%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 40% 40% 40%;
 }
 
@@ -139,8 +143,8 @@ form{
     flex: 1 1 auto;
     min-height: 20vh;
     max-height: 30vh;
-    justify-content: center;
-    gap: 4vh;
+    justify-content: space-around;
+    gap: 1vh;
 }
 
 .leadText{
@@ -153,4 +157,20 @@ form{
     flex-direction: column;
     justify-content: flex-end;
     gap: 10vh;
+}
+
+button{
+    background-color: #1C374A;
+    color: #E5E7EB;
+    max-width: 25%;
+    min-width: 20%;
+    min-height: 5vh;
+    font-size: larger;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#buttonArea a{
+    color:#1C374A;
+    text-decoration: none;
 }
