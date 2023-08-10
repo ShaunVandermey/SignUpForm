@@ -47,11 +47,11 @@
                 </div>
                 <div>
                     <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name="password">
+                    <input type="password" id="user_password" name="password" oninput="validatePasswords()">
                 </div>
                 <div>
                     <label for="user_password_match">Confirm Password</label>
-                    <input type="password" id="user_password_match" name="password_match">
+                    <input type="password" id="user_password_match" name="password_match" oninput="validatePasswords()">
                 </div>
             </form>
         </div>
@@ -61,5 +61,22 @@
         </div>
     </div>
     <div class="sidebar"></div>
+
+    <script>
+        function validatePasswords(){
+            passwordObj = document.getElementById("user_password")
+            userPassword = passwordObj.value;
+            passwordMatchObj = document.getElementById("user_password_match")
+            userPasswordMatch = passwordMatchObj.value;
+            if (userPassword != userPasswordMatch){
+                passwordObj.classList.add("input_error");
+                passwordMatchObj.classList.add("input_error");
+            }
+            else{
+                passwordObj.classList.remove("input_error");
+                passwordMatchObj.classList.remove("input_error");
+            }
+        }
+    </script>
 </body>
 </html>
