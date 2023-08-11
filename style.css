@@ -16,8 +16,8 @@ body{
     width: 100%;
     min-height: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 body > *{
@@ -141,8 +141,8 @@ form{
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    min-height: 20vh;
-    max-height: 30vh;
+    min-height: 300px;
+    max-height: 300px;
     justify-content: space-evenly;
     gap: 1vh;
     position: relative;
