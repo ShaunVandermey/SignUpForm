@@ -143,8 +143,9 @@ form{
     flex: 1 1 auto;
     min-height: 20vh;
     max-height: 30vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 1vh;
+    position: relative;
 }
 
 .leadText{
@@ -178,4 +179,10 @@ button{
 .input_error{
     outline-color: red !important;
     border: 1px solid red !important;
+}
+
+#passwordWarning{
+    color: red;
+    position: absolute;
+    bottom: 0;
 }

@@ -54,6 +54,7 @@
                     <input type="password" id="user_password_match" name="password_match" oninput="validatePasswords()">
                 </div>
             </form>
+            <div id="passwordWarning" hidden>* Passwords must match</div>
         </div>
         <div id="buttonArea">
             <button>Create Account</button>
@@ -64,17 +65,20 @@
 
     <script>
         function validatePasswords(){
-            passwordObj = document.getElementById("user_password")
+            passwordObj = document.getElementById("user_password");
             userPassword = passwordObj.value;
-            passwordMatchObj = document.getElementById("user_password_match")
+            passwordMatchObj = document.getElementById("user_password_match");
             userPasswordMatch = passwordMatchObj.value;
+            passwordWarning = document.getElementById("passwordWarning");
             if (userPassword != userPasswordMatch){
                 passwordObj.classList.add("input_error");
                 passwordMatchObj.classList.add("input_error");
+                passwordWarning.hidden = false;
             }
             else{
                 passwordObj.classList.remove("input_error");
                 passwordMatchObj.classList.remove("input_error");
+                passwordWarning.hidden = true;
             }
         }
     </script>
